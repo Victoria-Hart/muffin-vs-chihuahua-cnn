@@ -1,8 +1,10 @@
 # Muffin vs Chihuahua CNN
 
+This project was inspired by the popular "Muffin vs Chihuahua" internet meme, which highlights how visually similar certain muffins and Chihuahuas can appear. The meme presents a fun image classification challenge that demonstrates the capabilities of Convolutional Neural Networks (CNNs) and Transfer Learning for computer vision tasks:
+
 ![Captcha](images/blueberrychihuahuacaptcha.png)
 
-A deep learning image classification project comparing:
+This is a deep learning image classification project comparing:
 
 - Baseline CNN
 - Regularized CNN
