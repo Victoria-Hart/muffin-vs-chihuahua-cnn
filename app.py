@@ -9,13 +9,21 @@ from tensorflow.keras.models import load_model
 # Load Models
 # --------------------------------------------------
 
-enhanced_model = load_model(
-    "muffin_chihuahua_enhanced.keras"
-)
+@st.cache_resource
+def load_models():
 
-transfer_model = load_model(
-    "muffin_chihuahua_transfer.keras"
-)
+    enhanced = load_model(
+        "muffin_chihuahua_enhanced.keras"
+    )
+
+    transfer = load_model(
+        "muffin_chihuahua_transfer.keras"
+    )
+
+    return enhanced, transfer
+
+
+enhanced_model, transfer_model = load_models()
 
 # --------------------------------------------------
 # Demo Images
